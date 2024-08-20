@@ -5,6 +5,7 @@
     --statistic-text: #CDA274;
     --statistic-bg: #F4F0EC;
     --footer-line: #E5E5E5;
+    --blogs-line: #E7E7E7;
 }
 
 .container {
@@ -18,12 +19,36 @@ body {
 }
 
 /* header */
+
+header {
+    padding: 30px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
 .nav-link {
     color: var(--title-color);
     font-size: 19px;
     font-weight: 400;
     line-height: 1.57;
     letter-spacing: 0.4px;
+}
+
+.nav-link:hover {
+    color: var(--statistic-text);
+}
+
+.attention {
+    color: var(--statistic-text);
 }
 
 /* hero */
@@ -45,6 +70,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.22px;
     width: 595px;
+    margin-bottom: 19px;
 }
 
 .hero-text {
@@ -54,6 +80,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.22px;
     width: 577px;
+    margin-bottom: 35px;
 }
 
 .hero-btn {
@@ -66,13 +93,35 @@ body {
     border-radius: 18px;
     border: 2px var(--title-color);
     background: var(--title-color);
+    display: flex;
+    gap: 30px;
+}
 
+.span-hero {
+    color: var(--statistic-text);
 }
 
 /* types */
 
 .types {
-    padding: 100px 0;
+    padding: 170px 0;
+}
+
+.types-list {
+    display: flex;
+    gap: 93px;
+}
+
+.types-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+
 }
 
 .types-title {
@@ -92,6 +141,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+    margin: 17px 0 35px 0;
 }
 
 .types-more {
@@ -103,10 +153,24 @@ body {
     letter-spacing: 0.36px;
 }
 
+.margin {
+    margin-bottom: 68px;
+    width: 317px;
+}
+
+.width {
+    width: 297px;
+}
+
 /* call-us */
 
 .call-us {
     padding-bottom: 139px;
+}
+
+.call {
+    display: flex;
+    gap: 77px;
 }
 
 .call-title {
@@ -117,6 +181,7 @@ body {
     line-height: 1.3;
     letter-spacing: 0.22px;
     width: 450px;
+    margin-bottom: 42px;
 }
 
 .call-text {
@@ -126,15 +191,32 @@ body {
     line-height: 1.5;
     letter-spacing: 0.22px;
     width: 531px;
+    margin-bottom: 40px;
+}
+
+.info {
+    width: 154.313px;
+    height: 79px;
+    flex-direction: column;
+    display: inline-flex;
+}
+
+.phone {
+    display: inline-flex;
+    gap: 20px;
 }
 
 .phone-btn {
     padding: 29px 30px;
-    width: 34px;
-    height: 34px;
     border: none;
     border-radius: 100px;
     background: var(--statistic-bg);
+    margin-bottom: 50px;
+}
+
+.call-phone {
+    width: 34px;
+    height: 34px;
 }
 
 .call-tel {
@@ -171,6 +253,33 @@ body {
 
 /* reviews */
 
+.view {
+    border-radius: 70px;
+    background: var(--statistic-bg);
+    padding: 103px 35px 121px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.reviews-items {
+    border-radius: 30px;
+    background: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 55px 79px 45px 35px;
+    gap: 20px;
+}
+
 .reviews-title {
     color: var(--title-color);
     text-align: center;
@@ -179,11 +288,17 @@ body {
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0.22px;
+    width: 479px;
+    margin-bottom: 47px;
 }
 
 .reviews-img {
     width: 77px;
     height: 77px;
+}
+
+.wiz {
+    width: 274px;
 }
 
 .reviews-name {
@@ -217,10 +332,22 @@ body {
     padding: 140px 0px 113px 0px;
 }
 
+.brands-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* projects */
 
 .projects {
     padding-bottom: 140px;
+}
+
+.recent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-title {
@@ -231,16 +358,31 @@ body {
     font-weight: 400;
     line-height: 1.32;
     letter-spacing: 0.22px;
+    margin-bottom: 20px;
 }
 
 .projects-text {
-    color: var(--title-color);
+    color: var(--text-color);
     text-align: center;
-    font-family: "DM Serif Display";
-    font-size: 47px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 1.32;
+    line-height: 1.5;
     letter-spacing: 0.22px;
+    width: 786px;
+    margin-bottom: 70px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 60px;
+}
+
+.projects-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
 }
 
 .projects-pic {
@@ -273,6 +415,23 @@ body {
 
 /* statistic */
 
+.statistic {
+    background-color: var(--statistic-bg);
+    padding: 140px 0;
+}
+
+.statistic-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.statistic-item {
+    border-right: 1px solid var(--statistic-text);
+    flex-grow: 1;
+}
+
 .statistic-titile {
     color: var(--statistic-text);
     text-align: center;
@@ -294,6 +453,10 @@ body {
 
 /* blogs */
 
+.blogs {
+    padding: 141px 0;
+}
+
 .blog-title {
     color: var(--title-color);
     text-align: center;
@@ -302,6 +465,7 @@ body {
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0.22px;
+    margin-bottom: 21px;
 }
 
 .blogs-p {
@@ -311,6 +475,25 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+    width: 589px;
+    margin-bottom: 70px;
+}
+
+.blogs-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+
+.blogs-item {
+    border-radius: 62px;
+    border: 1px var(--footer-line);
+    width: 345px;
+    padding: 21px;
+    border-radius: 62px;
+    border: 1px solid var(--blogs-line);
 }
 
 .blogs-img {
@@ -338,6 +521,15 @@ body {
     font-weight: 400;
     line-height: 1.;
     letter-spacing: 0.5px;
+    width: 334px;
+    margin-bottom: 20px;
+}
+
+.blogs-card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 149px;
 }
 
 .arrow-btn {
@@ -354,6 +546,10 @@ body {
     width: 1170px;
     height: 400px;
     border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .join-title {
@@ -364,6 +560,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+    margin-bottom: 9px;
 }
 
 .join-text {
@@ -373,6 +570,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+    margin-bottom: 31px;
 }
 
 .join-btn {
@@ -396,6 +594,51 @@ body {
     letter-spacing: 0.22px;
 }
 
+/* contacts */
+
+.contacnts {
+    padding: 130px 0 80px 0;
+}
+
+.logo-footer {
+    width: 177px;
+    height: 50px;
+}
+
+.contacts-logo {
+    display: flex;
+    height: 454px;
+    justify-content: space-between;
+
+}
+
+.we-text {
+    width: 326px;
+    margin-top: 15px;
+}
+
+.item-text {
+    color:var(--text-color);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 22px;
+}
+
+.list-inst {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
 .contacts title {
     color: var(--title-color);
     font-family: "DM Serif Display";
@@ -412,6 +655,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.22px;
 }
+
+
+/* end */
 
 .end {
     border-top: 2px solid var(--footer-line);
