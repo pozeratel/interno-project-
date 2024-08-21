@@ -175,7 +175,7 @@ header {
 
 .call {
     display: flex;
-    justify-content: space-between;
+    gap: 16px;
 }
 
 .call-title {
@@ -187,6 +187,10 @@ header {
     letter-spacing: 0.22px;
     width: 450px;
     margin-bottom: 42px;
+}
+
+.call-list{
+    padding: 14px 61px 10px 0;
 }
 
 .call-text {
