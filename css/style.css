@@ -175,6 +175,12 @@ header {
 
 .call {
     display: flex;
+    flex-direction: column;
+    padding: 14px 61px 10px 0;
+}
+
+.lock {
+    display: flex;
     gap: 16px;
 }
 
@@ -189,10 +195,6 @@ header {
     margin-bottom: 42px;
 }
 
-.call-list{
-    padding: 14px 61px 10px 0;
-}
-
 .call-text {
     color: var(--text-color);
     font-size: 22px;
@@ -205,8 +207,8 @@ header {
 
 .info {
     display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .phone {
@@ -222,6 +224,7 @@ header {
     background: var(--statistic-bg);
     width: 93px;
     height: 93px;
+    margin-right: 20px;
 }
 
 .call-phone {
@@ -255,6 +258,7 @@ header {
     border-radius: 18px;
     border: 2px var(--title-color);
     background: var(--title-color);
+    width: 263px
 }
 
 .call-img {
@@ -273,7 +277,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .reviews-list {
@@ -442,6 +445,10 @@ header {
 .statistic-item {
     border-right: 1px solid var(--statistic-text);
     flex-grow: 1;
+}
+
+.statistic-item:nth-child(4){
+    border: none;
 }
 
 .statistic-titile {
