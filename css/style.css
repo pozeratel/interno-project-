@@ -447,7 +447,7 @@ header {
     flex-grow: 1;
 }
 
-.statistic-item:nth-child(4){
+.statistic-item:nth-child(4) {
     border: none;
 }
 
@@ -635,8 +635,7 @@ header {
 .contacts-logo {
     display: flex;
     height: 454px;
-    justify-content: space-between;
-
+    column-gap: 16px;
 }
 
 .we-text {
@@ -656,6 +655,7 @@ header {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    column-gap: 110px;
     margin-top: 22px;
 }
 
@@ -677,12 +677,40 @@ header {
 
 .address {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 22px;
+    font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
 }
 
+.brooklyn {
+    width: 321px;
+}
+
+.our {
+    padding-right: 60px;
+}
+
+.page {
+    padding-right: 60px;
+}
+
+.style{
+    padding-right: 36px;
+}
+
+.explore{
+    padding-right: 27px;
+}
+
+.messengers {
+    padding: 0 60px 180px 0;
+}
+
+.gmail{
+    padding-right: 32px;
+}
 
 /* end */
 
